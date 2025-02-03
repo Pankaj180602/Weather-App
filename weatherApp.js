@@ -27,9 +27,6 @@ async function fetchWeather(url) {
         const response = await fetch(url, options);  //API Fetch
         const data = await response.json();
 
-        console.log(data);
-
-
         const temperature = data.current.temp_c;     //API data access
         const humidity = data.current.humidity;
         const condition = data.current.condition.text;
@@ -65,8 +62,6 @@ leftArrow.addEventListener('click', () => {           //Left arrow click
     inputArea.classList.remove("ia-hide");
     leftArrow.classList.add("arrow-hide");
 });
-
-
 
 //Device location locate
 locationBtn.addEventListener('click', () => {
