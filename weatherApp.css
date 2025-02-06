@@ -63,7 +63,7 @@ body{
     color: #fff;
 }
 
-.main-container button:hover{
+#locationBtn:hover{
     cursor: pointer;
 }
 
@@ -163,7 +163,9 @@ body{
     color: #43AFFC;
     font-size: 40px;
 }
-
+.bx:hover{
+    cursor:auto;
+}
 
 .details .temp, .bottom-humidity span{
     font-size: 18px;
@@ -191,4 +193,18 @@ body{
     height: 70px;
     width: 1px;
     background: #b3a7a7;
+}
+
+
+
+@media (max-width: 650px) {
+    .main-container{
+        width: 300px;
+    }
+    .main-container i{
+        font-size: 20px;
+    }
+    .main-container header{
+        font-size: 20px;
+    }
 }
